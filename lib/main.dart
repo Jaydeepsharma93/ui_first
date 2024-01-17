@@ -206,6 +206,7 @@ class MyApp extends StatelessWidget {
                   TextSpan(
                     text: '       Say Hi to RichTex',
                     style: TextStyle(
+
                     color: Color(0xff888888),
                     wordSpacing: 2,
                     fontSize: 22,
