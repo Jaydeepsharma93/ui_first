@@ -102,55 +102,116 @@ class MyApp extends StatelessWidget {
       // ),
 
 
+      // home: SafeArea(
+      //   child: Scaffold(
+      //     appBar: AppBar(
+      //       backgroundColor: Colors.blue,
+      //       title:const Text('RichText  Example',
+      //         style:TextStyle(
+      //           color: Colors.white,
+      //         ),
+      //       ),
+      //       centerTitle: true,
+      //
+      //     ),
+      //     body:  Center(
+      //       child:RichText(
+      //         text:const TextSpan(
+      //             children: [
+      //               TextSpan(text: 'Single  ',
+      //                 style: TextStyle(
+      //                   color: Color(0xff2196F3),
+      //                   fontWeight: FontWeight.w900,
+      //                   fontSize: 30,
+      //                   fontFamily: "Google Sans",
+      //                 ),
+      //               ),
+      //               TextSpan(text: 'Line',style:
+      //               TextStyle(
+      //                 color: Color(0xffFFFFFF),
+      //                 backgroundColor: Color(0xff009688),
+      //                 fontSize: 30,
+      //                 fontFamily: "Google Sans",
+      //                 fontWeight: FontWeight.w900,
+      //               )
+      //               ),
+      //               TextSpan(text: '  Multiple',
+      //                   style: TextStyle(
+      //                     color: Color(0xffFF9800),
+      //                     fontSize: 30,
+      //                     fontFamily: 'RobotoMono',
+      //                     fontWeight: FontWeight.w900,
+      //                   )
+      //               ),
+      //               TextSpan(text: '  Style',
+      //                   style: TextStyle(
+      //                     color: Color(0xffE91D63),
+      //                     fontSize: 30,
+      //                     fontWeight: FontWeight.w900,
+      //                   )
+      //               ),
+      //             ]
+      //         ),
+      //       ),
+      //     ),
+      //   ),
+      // ),
+
+
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
-            backgroundColor: Colors.blue,
-            title:const Text('RichText  Example',
-              style:TextStyle(
-                color: Colors.white,
-              ),
+            title: const Text('Flutter RichText',
+              style: TextStyle(
+                color: Color(0xffffffff),
+             ),
             ),
-            centerTitle: true,
-
+            backgroundColor: Color(0xff2196F3),
           ),
-          body:  Center(
-            child:RichText(
-              text:const TextSpan(
-                  children: [
-                    TextSpan(text: 'Single  ',
+          body: const Center(
+            child: Text.rich(
+              TextSpan(
+                children: [
+                  TextSpan(text: 'RichText helps to create\n',
                       style: TextStyle(
-                        color: Color(0xff2196F3),
-                        fontWeight: FontWeight.w900,
-                        fontSize: 30,
-                        fontFamily: "Google Sans",
-                      ),
-                    ),
-                    TextSpan(text: 'Line',style:
-                    TextStyle(
-                      color: Color(0xffFFFFFF),
-                      backgroundColor: Color(0xff009688),
-                      fontSize: 30,
-                      fontFamily: "Google Sans",
-                      fontWeight: FontWeight.w900,
+                        color: Color(0xff888888),
+                         fontSize: 25,
+                      )
+                  ),
+                  TextSpan(text: ' Highlighted\n',
+                      style: TextStyle(
+                    color: Color(0xffF44336),
+                    fontSize: 50,
+                    fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.bold,
+                    height: 0.9,
                     )
+                  ),
+                  TextSpan(
+                    text: 'Clickable',
+                    style: TextStyle(
+                    color: Color(0xff108DF1),
+                    fontSize: 25,
+                    decoration: TextDecoration.underline,
+                    decorationColor: Color(0xff108DF1),
                     ),
-                    TextSpan(text: '  Multiple',
-                        style: TextStyle(
-                          color: Color(0xffFF9800),
-                          fontSize: 30,
-                          fontFamily: 'RobotoMono',
-                          fontWeight: FontWeight.w900,
-                        )
+                  ),
+                  TextSpan(
+                    text: '  OutlinedText\n',
+                    style: TextStyle(
+                    color: Color(0xff269D2A),
+                    fontSize: 25,
                     ),
-                    TextSpan(text: '  Style',
-                        style: TextStyle(
-                          color: Color(0xffE91D63),
-                          fontSize: 30,
-                          fontWeight: FontWeight.w900,
-                        )
+                  ),
+                  TextSpan(
+                    text: '       Say Hi to RichTex',
+                    style: TextStyle(
+                    color: Color(0xff888888),
+                    wordSpacing: 2,
+                    fontSize: 22,
                     ),
-                  ]
+                  ),
+                ],
               ),
             ),
           ),
